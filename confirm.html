@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>R&D Auto Services</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            randomBookingNum();
+        };
+        
+        function randomBookingNum() {
+            var bookingNum = Math.floor(Math.random() * 999999) + 100000;
+            document.getElementById("bookingNum").textContent = bookingNum;
+        }
+        
+       
+    </script>
+    <style>
+        section {
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-light">
+        <!--navbar-->
+        <nav class="navbar navbar-expand bg-dark p-1 fixed-top">
+            <div class="container-xl ">
+                <a class="navbar-brand" href="homepage.html">
+                    <img src="image/newlogo.jpg" class="rounded-circle" width="60" height="60" alt="logo image">
+                </a>
+
+                <div class=" justify-content-end align-center ">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a href="homepage.html" class="nav-link text-light">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="homepage.html#contact" class="nav-link text-light">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="homepage.html#team" class="nav-link text-light">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="service.html" class="nav-link text-light">Our Services</a>
+                        </li>
+
+                        <li class="nav-item  ">
+                            <a href="booking.html" class="nav-link text-light">Book an Appointment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Confirm-->
+        <section id="booking">
+            <div class="row  justify-content-center align-items-center">
+                <div class="display-4 mt-5 text-center">Booking Confirmed</div>
+
+                <p class="col-8 my-3 text-muted text-center">Our team thanks you for choosing R&D Auto Services. 
+                    Your appointment has been successfully scheduled. With our top-notch automotive service, 
+                    we look forward to providing you with the best experience possible!
+                </p>
+                <hr class=" col-10 my-5">
+                <div class="display-6 text-center mb-5">Booking Detail</div>
+                <p class="mt-3 text-dark text-center">Booking Number: <span id="bookingNum"></span></p>
+               
+        
+                <div class="text-center">
+                    <a href="homepage.html" class="my-2 btn btn-success" role="button">Confirmed</a>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
